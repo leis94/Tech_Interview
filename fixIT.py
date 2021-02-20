@@ -62,8 +62,10 @@ if __name__ == '__main__':
 
     letsee.addNewList()
 
+    print(letsee.aList)
+
     # This should print the result of 3 + 7
-    print(letsee.aList[2] + letsee.aList[6])
+    print(letsee.aList[2] + letsee.aList[5][1])
 
     res = letsee.checkKey('capital')
 
@@ -71,10 +73,10 @@ if __name__ == '__main__':
 
     numbers = {'a': 1, 'b': 2, 'c': 3}
 
-    result = letsee.sumOfThree(numbers)
+    # result = letsee.sumOfThree(numbers)
 
     # This should print "6"   -> 1 + 2 + 3
-    print(result)
+    # print(result)
 
-    letsee.fillaDict(numbers)
+    # letsee.fillaDict(numbers)
 
