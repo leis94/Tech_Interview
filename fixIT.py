@@ -30,10 +30,10 @@ class failingClass():
 
         Return: True if key exists, False otherwise
         """
-        if self.aDict[key] is None:
+        if key in self.aDict.keys():
+            return True
+        else:
             return False
-        
-        return True
 
     def sumOfThree(self, a, b, c):
         """
