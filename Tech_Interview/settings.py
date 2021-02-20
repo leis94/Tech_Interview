@@ -37,6 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Locals
+    'nba',
+
+    # Third Party Apps
+    'rest_framework',
+
 ]
 
 MIDDLEWARE = [
@@ -75,10 +82,15 @@ WSGI_APPLICATION = 'Tech_Interview.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'qdxniqev',
+        'USER': 'qdxniqev',
+        'PASSWORD': 'IHe2ECVljCaixD3FjtfpRI2TYFTtjiQE',
+        'HOST': 'ziggy.db.elephantsql.com',
+        'PORT': '5432'
     }
 }
+
 
 
 # Password validation
@@ -118,3 +130,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Django REST Framework
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': (
+        'rest_framework.renderers.JSONRenderer',
+        'rest_framework.renderers.BrowsableAPIRenderer',
+    ),
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10,
+}
