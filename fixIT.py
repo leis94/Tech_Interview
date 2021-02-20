@@ -50,7 +50,7 @@ class failingClass():
                     key-values from the dictionary numbers.
         @numbers: dictionary to be use to fill the instance dictionary
         """
-        aDict = numbers
+        self.aDict.update(numbers)
 
 
 
@@ -78,5 +78,7 @@ if __name__ == '__main__':
     # This should print "6"   -> 1 + 2 + 3
     print(result)
 
-    # letsee.fillaDict(numbers)
+    letsee.fillaDict(numbers)
+
+    print(letsee.aDict)
 
