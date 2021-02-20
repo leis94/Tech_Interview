@@ -73,10 +73,10 @@ if __name__ == '__main__':
 
     numbers = {'a': 1, 'b': 2, 'c': 3}
 
-    # result = letsee.sumOfThree(numbers)
+    result = letsee.sumOfThree(**numbers)
 
     # This should print "6"   -> 1 + 2 + 3
-    # print(result)
+    print(result)
 
     # letsee.fillaDict(numbers)
 
