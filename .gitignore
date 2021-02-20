@@ -146,6 +146,6 @@ dmypy.json
 .prof
 
 # nba merged file
-nba_merged.xlsx
+python_and_pandas/nba_merged.xlsx
 
 # End of https://www.toptal.com/developers/gitignore/api/python
