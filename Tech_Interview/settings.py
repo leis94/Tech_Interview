@@ -80,23 +80,17 @@ WSGI_APPLICATION = 'Tech_Interview.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'qdxniqev',
-#         'USER': 'qdxniqev',
-#         'PASSWORD': 'IHe2ECVljCaixD3FjtfpRI2TYFTtjiQE',
-#         'HOST': 'ziggy.db.elephantsql.com',
-#         'PORT': '5432'
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'qdxniqev',
+        'USER': 'qdxniqev',
+        'PASSWORD': 'IHe2ECVljCaixD3FjtfpRI2TYFTtjiQE',
+        'HOST': 'ziggy.db.elephantsql.com',
+        'PORT': '5432'
     }
 }
+
 
 
 # Password validation
