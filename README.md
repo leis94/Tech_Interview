@@ -26,5 +26,6 @@ where it performs the tasks corresponding to python and pandas.
 There are two folders called "Tech_Interview" and which are part of the Django project and the nba application
 where an API is used to list and obtain data from a sqlite databases.
 
+There is a djando command called Load data that runs "python manage.py load_data" which loads the data from the excel nba.xlsx into the database.
 
 Thanks for reviewing my code.
